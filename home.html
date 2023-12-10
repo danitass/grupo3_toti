@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Primeiro projeto</title>
     <link href="css/style.css" rel="stylesheet" />
+    <script src="./js/script.js"></script>
+    <script src="./js/script_cart.js"></script>
 </head>
 
 <body>
@@ -15,35 +17,48 @@
         <div class="logo">
             <img src="./img/gallery/saboresdefora.png" alt="Logo">
         </div>
-        
+            <nav>
+                <a href="./home.html">Home</a>
+                <a href="./receitas.html">Receitas</a>
+        </nav>
     </header>
 
+  
+
     <section>
-        <h2 class="section-title">Africa</h2>
-        <div class="product-card">
-            <h2>Angola</h2>
-            <p>Encontre os ingredientes</p>
-            <button>Procure aqui</button>
-        </div>
-
-        <div class="product-card">
-            <h2>Togo</h2>
-            <p>Encontre os ingredientes</p>
-            <button>Procure aqui</button>
-        </div>
-
-        <div class="product-card">
-            <h2>Guiné-Bissau</h2>
-            <p>Encontre os ingredientes</p>
-            <button>Procure aqui</button>
-        </div>
 
         <h2 class="section-title">America do Sul</h2>
         <div class="product-card">
             <h2>Venezuela</h2>
             <p>Encontre os ingredientes</p>
-            <button>Procure aqui</button>
+            <a href="./venezuela.html"><button>Procure aqui</button></a>
+            
         </div>
+
+        <h2 class="section-title">Africa</h2>
+        <div class="product-card">
+            <h2>Angola</h2>
+            <p>Encontre os ingredientes</p>
+            <a href="ruta_de_la_otra_pagina.html"><button>Procure aqui</button></a>
+        </div>
+
+        <div class="product-card">
+            <h2>Togo</h2>
+            <p>Encontre os ingredientes</p>
+            <a href="ruta_de_la_otra_pagina.html"><button>Procure aqui</button></a>
+        </div>
+
+        <div class="product-card">
+            <h2>Guiné-Bissau</h2>
+            <p>Encontre os ingredientes</p>
+            <a href="ruta_de_la_otra_pagina.html"><button>Procure aqui</button></a>
+        </div>
+
+        <button id="viewCart" onclick="goToCart()">
+            <img src="./img/gallery/carrito-de-compras.png" alt="Cart">
+        </button>
+
+       
     </section>
 
     <footer>

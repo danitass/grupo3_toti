@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Primeiro projeto</title>
     <link href="css/style.css" rel="stylesheet" />
+    <script src="./js/script.js"></script>
 </head>
 
 <body>
@@ -15,6 +16,11 @@
         <div class="logo">
             <img src="./img/gallery/saboresdefora.png" alt="Logo">
         </div>
+
+         <nav>
+                <a href="./home.html">Home</a>
+                <a href="./receitas.html">Receitas</a>
+        </nav>
     </header>
 
     <section>
@@ -26,20 +32,32 @@
             <h2>Farinha pan</h2>
             <img src="./img/gallery/harinapan.png" alt="Harina Pan">
             <p>Preço: R$20.00</p>
-            <button>Adicionar ao carrinho</button>
+            <label for="quantity-pan">Quantidade:</label>
+            <input type="number" id="quantity-pan" value="1" min="1">
+            <button class="add-to-cart" onclick="addToCart('Farinha pan', 20.00, 'quantity-pan')">Adicionar ao carrinho</button>
         </div>
-
+        
+    
         <div class="product-card">
             <h2>Queijo de mano</h2>
             <img src="./img/gallery/quesodemano.png" alt="Queso de Mano">
             <p>Preço: R$50.00</p>
-            <button>Adicionar ao carrinho</button>
+            <label for="quantity-queijo">Quantidade:</label>
+            <input type="number" id="quantity-queijo" value="1" min="1">
+            <button class="add-to-cart" onclick="addToCart('Queijo de mano', 50.00, 'quantity-queijo')">Adicionar ao carrinho</button>
         </div>
+
+        <button id="viewCart" onclick="goToCart()">
+            <img src="./img/gallery/carrito-de-compras.png" alt="Cart">
+        </button>
+        
     </section>
 
     <footer>
         <p>&copy; Grupo 3</p>
     </footer>
+
+ 
 
 </body>
 
