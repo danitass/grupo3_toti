@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Primeiro projeto</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="./js/script.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="./img/gallery/saboresdefora.png" alt="Logo">
+        </div>
+
+         <nav>
+                <a href="./home.html">Home</a>
+                <a href="./receitas.html">Receitas</a>
+        </nav>
+    </header>
+
+    <section>
+        <h2 class="section-title">America do Sul</h2>
+
+        <h2 class="section-title">Venezuela</h2>
+
+        <div class="product-card">
+            <h2>Farinha pan</h2>
+            <img src="./img/gallery/farinha branca.png" alt="Farinha Branca">
+            <p>Preço: R$20.00</p>
+            <label for="quantity-pan">Quantidade:</label>
+            <input type="number" id="quantity-pan" value="1" min="1">
+            <button class="add-to-cart" onclick="addToCart('Farinha branca', 20.00, 'quantity-pan')">Adicionar ao carrinho</button>
+        </div>
+        
+        <button id="viewCart" onclick="goToCart()">
+            <img src="./img/gallery/carrito-de-compras.png" alt="Cart">
+        </button>
+        
+    </section>
+
+    <footer>
+        <p>&copy; Grupo 3</p>
+    </footer>
+
+ 
+
+</body>
+
+</html>
